@@ -72,17 +72,18 @@ public class MainActivity extends AppCompatActivity {
                     }
                 });
     }
-
-    
-    // ***
-    // TODO - Task 1 - Show Store Information Activity
-    // ***
-@Override
+    @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.main, menu);
         return true;
     }
+
+    
+    // ***
+    // TODO - Task 1 - Show Store Information Activity
+    // ***
+
     private void addCandiesToDatabase(Candy[] candies) {
         SQLiteDatabase db = candyDbHelper.getWritableDatabase();
 
